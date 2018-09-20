@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addEntry">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <TextView
+                android:text="Entry Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="43dp"
+                android:id="@+id/textView6"
+                android:textSize="30sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/entryName"
+                android:hint="ex. Quiz1"
+                android:layout_below="@+id/textView6"
+                android:layout_alignStart="@+id/textView6" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/entryMark"
+                android:hint="ex. 78.4 (78.4%)"
+                android:layout_below="@+id/label"
+                android:layout_alignStart="@+id/label" />
+
+            <TextView
+                android:text="Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:id="@+id/textView7"
+                android:textSize="30sp"
+                android:layout_below="@+id/entryMark"
+                android:layout_alignStart="@+id/entryMark" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:layout_below="@+id/textView7"
+                android:layout_alignStart="@+id/textView7"
+                android:id="@+id/entryWeight"
+                android:hint="ex. 12.5 (12.5%)" />
+
+            <TextView
+                android:text="Mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:id="@+id/label"
+                android:textSize="30sp"
+                android:layout_below="@+id/entryName"
+                android:layout_alignStart="@+id/entryName" />
+
+            <Button
+                android:text="Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back3"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="21dp"
+                android:layout_below="@+id/entryWeight"
+                android:layout_toStartOf="@+id/delEntry" />
+
+            <Button
+                android:text="Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveEntry"
+                android:layout_alignBaseline="@+id/back3"
+                android:layout_alignBottom="@+id/back3"
+                android:layout_toEndOf="@+id/delEntry"
+                android:layout_marginStart="30dp" />
+
+            <Button
+                android:text="Delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/delEntry"
+                android:layout_alignBaseline="@+id/saveEntry"
+                android:layout_alignBottom="@+id/saveEntry"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
